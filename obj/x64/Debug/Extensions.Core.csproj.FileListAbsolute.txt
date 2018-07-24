@@ -1,0 +1,4 @@
+C:\Source\Extensions\Extensions.Core\bin\x64\Debug\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\bin\x64\Debug\Extensions.Core.pdb
+C:\Source\Extensions\Extensions.Core\obj\x64\Debug\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\obj\x64\Debug\Extensions.Core.pdb

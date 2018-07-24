@@ -1,0 +1,5 @@
+C:\Source\Extensions\Extensions.Core\bin\Debug\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\bin\Debug\Extensions.Core.pdb
+C:\Source\Extensions\Extensions.Core\obj\Debug\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\obj\Debug\Extensions.Core.pdb
+C:\Source\Extensions\Extensions.Core\obj\Debug\Extensions.Core.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Source\Extensions\Extensions.Core\bin\Release\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\bin\Release\Extensions.Core.pdb
+C:\Source\Extensions\Extensions.Core\obj\Release\Extensions.Core.dll
+C:\Source\Extensions\Extensions.Core\obj\Release\Extensions.Core.pdb
+C:\Source\Extensions\Extensions.Core\bin\Release\Extensions.Core.XML

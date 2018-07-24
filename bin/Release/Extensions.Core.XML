@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Extensions.Core.DataTableExtensions">
+            <summary>
+            Class DataTableExtensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.Core.DataTableExtensions.DataTableToList``1(System.Data.DataTable)">
+            <summary>
+            Convert a data table to a list of objects 
+            </summary>
+            <typeparam name="T">Type you want returned</typeparam>
+            <param name="table">Datatable you want to convert</param>
+            <returns>List&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Extensions.Core.DataTableExtensions.ToCSV(System.Data.DataTable,System.String,System.Boolean,System.String)">
+            <summary>
+            Output a DataTable To a CSV file.
+            </summary>
+            <param name="table">The table to export.</param>
+            <param name="delimiter">The delimiter.</param>
+            <param name="includeHeader">if set to <c>true</c> [include header].</param>
+            <param name="outputPath">The output path.</param>
+            <example>
+            DataTable dataTableExportToCSV;
+            dataTableExportToCSV.ToCSV(",", false, "C:\temp.csv");
+            </example>
+        </member>
+        <member name="M:Extensions.Core.DataTableExtensions.ToXml(System.Data.DataTable,System.String)">
+            <summary>
+            Convert a datatable to XML.
+            </summary>
+            <param name="dt">The datatable to convert.</param>
+            <param name="rootName">Name of the root.</param>
+            <returns>XDocument.</returns>
+            <example>
+            dtCert.ToXml("Certs")
+            </example>
+        </member>
+        <member name="M:Extensions.Core.DataTableExtensions.RenameColumn(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            Renames the column.
+            </summary>
+            <param name="dt">The Datatable.</param>
+            <param name="oldName">The old column name.</param>
+            <param name="newName">The new column name.</param>
+            <example>
+            dataSetName.Tables[0].RenameColumn("Column1", "Name");
+            </example>
+        </member>
+        <member name="M:Extensions.Core.DataTableExtensions.RemoveColumn(System.Data.DataTable,System.String)">
+            <summary>
+            Removes the specified column from a datatable.
+            </summary>
+            <param name="dt">The datatable.</param>
+            <param name="columnName">Name of the column to remove.</param>
+            <example>
+            dataSetName.Tables[0].RemoveColumn("Column12");
+            </example>
+        </member>
+        <member name="T:Extensions.Core.HttpResponseExtensions">
+            <summary>
+            Class HttpResponseExtensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.Core.HttpResponseExtensions.ForceDownload(System.Web.HttpResponse,System.String,System.String)">
+            <summary>
+            Force download of a file that exists on the server
+            </summary>
+            <param name="response">HttpResponse Object</param>
+            <param name="fullPathToFile">Path to file on server</param>
+            <param name="outputFileName">Name of the file to save to client</param>
+        </member>
+        <member name="M:Extensions.Core.HttpResponseExtensions.ForceDownload(System.Web.HttpResponse,System.Byte[],System.String)">
+            <summary>
+            Force download of a file that exists in a database
+            </summary>
+            <param name="response">httpResponse Object</param>
+            <param name="fileBytes">Byte array containing file contents</param>
+            <param name="outputFileName">Name of the file to save to client</param>
+        </member>
+        <member name="T:Extensions.Core.ObjectExtensions">
+            <summary>
+            Class ObjectExtensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.Core.ObjectExtensions.ConvertTo``1(System.Object)">
+            <summary>
+            Converts to.
+            </summary>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="obj">The object.</param>
+            <returns>TValue.</returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="T:Extensions.Core.StringExtensions">
+            <summary>
+            Class StringExtensions.
+            </summary>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.ConvertBoolToChar(System.Nullable{System.Boolean})">
+            <summary>
+            Converts the bool to character.
+            </summary>
+            <param name="value">if set to <c>true</c> [value].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.ConvertBoolToChar(System.Boolean)">
+            <summary>
+            Converts the bool to character.
+            </summary>
+            <param name="value">if set to <c>true</c> [value].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.ConvertCharToBool(System.String)">
+            <summary>
+            Converts the character to bool.
+            </summary>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.SubstringAt(System.String,System.Int32)">
+            <summary>
+            Substrings from zero to n
+            </summary>
+            <param name="text">String to trim</param>
+            <param name="allowedLength">Max length allowed</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.IsValidEmailAddress(System.String)">
+            <summary>
+            Determines whether [is valid email address] [the specified s].
+            </summary>
+            <param name="s">The s.</param>
+            <returns><c>true</c> if [is valid email address] [the specified s]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Extensions.Core.StringExtensions.IsValidUrl(System.String)">
+            <summary>
+            Determines whether [is valid URL] [the specified text].
+            </summary>
+            <param name="text">The text.</param>
+            <returns><c>true</c> if [is valid URL] [the specified text]; otherwise, <c>false</c>.</returns>
+        </member>
+    </members>
+</doc>
